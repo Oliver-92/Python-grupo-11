@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="STYLESHEET" href="/css/estilo.css" />
+    <link rel="icon" href="../assets/favicon.ico" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contacto</h1>
+
+    <h2>Dirección</h2>
+    <p><b>Calle 8 n 835, La Plata, Provincia de Buenos Aires</b></p>
+    <hr />
+    <h2>Horario de Atención al Público</h2>
+    <p><b>Lunes a viernes: de 8:00 am a 5:30pm</b></p>
+    <p><b>Sábado: cerrado</b></p>
+    <p><b>Domingo: cerrado</b></p>
+    <hr />
+    <br />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.6564934571857!2d-57.95388484546562!3d-34.91506898642213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e630cf3e3665%3A0x4b939aa534afc458!2sC.%208%20835%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710964094975!5m2!1ses-419!2sar"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <br />
+    <hr />
+    <h2>Habla con nosotros</h2>
+    <form action="show-data.html">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" placeholder="Ingresa tu nombre" size="25" />
+      <br /><br />
+      <label for="lastname">Apellido</label>
+      <input
+        type="text"
+        id="lastname"
+        placeholder="Ingresa tu apellido"
+        size="25"
+      />
+      <br /><br />
+      <label for="phone">Cel.</label>
+      <input
+        type="text"
+        id="phone"
+        placeholder="Ingresa tu nº de celular"
+        size="25"
+      />
+      <br /><br />
+      <label for="mail">Email*</label>
+      <input
+        type="text"
+        id="mail"
+        placeholder="Ingresa tu email"
+        size="25"
+        required
+      />
+      <br /><br />
+      <p>Mensaje*</p>
+      <textarea
+        name="coments"
+        cols="80"
+        rows="10"
+        placeholder="Ingrese su mensaje..."
+        required
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar" />
+    </form>
+  </body>
+</html>
