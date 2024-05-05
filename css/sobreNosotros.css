@@ -1,0 +1,158 @@
+body {
+    background-color: #007bff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"
+                         "container container"
+                         "footer footer"
+}
+
+header {
+    background: #343a40;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    grid-area: header;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    font-family: Arial, sans-serif;
+    ;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #007bff;
+}
+
+.imgheader {
+    margin-left: auto;
+    margin-right: 5vw;
+    align-content: space-between;
+}
+
+.name {
+    font-family: "Monoton", sans-serif;
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ul,
+.imgheader {
+    flex-grow: 1;
+}
+
+ul {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+
+    ul,
+    .imgheader {
+        flex-grow: unset;
+        font-size: 15px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 20px 7px;
+    }
+
+    #subtitle {
+        font-size: 100rem;
+    }
+}
+
+.container {
+    margin-top: 0.3rem;
+    grid-area: container;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.image-container {
+    flex: 1;
+    margin-right: 10px;
+    max-width: 50%;
+}
+  
+.text-container {
+    color: #fff;
+    font-size: 150%;
+    flex: 1;
+    max-width: 50%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+} 
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+    }
+    .image-container, .text-container{
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: #343a40;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 15px;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+.social-icons {
+    margin: 20px 0;
+}

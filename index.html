@@ -13,27 +13,26 @@
     <script src="https://kit.fontawesome.com/9001ab4b01.js" crossorigin="anonymous"></script>
     <title>Celulares</title>
   </head>
+
   <body>
-    
+    <!--Contenedor principal que contiene todas las secciones para acomodarlas con grid-->
+    <div class="contenedor-principal">
     <header>
-      <!-- Este es el menu, modificado con css -->
       <nav>
         <ul>
-          <li><a href="/index.html">Inicio</a></li>
           <li><a href="/html/productos.html">Productos</a></li>
-          <li><a href="/html/sobreNosotros.html">Sobre Nosotros</a></li>
           <li><a href="/html/contacto.html">Contacto</a></li>
-
-          <div class="imgheader">
-            <img src="/assets/image.png" width="60px" height="60px" alt="Tienda de celulares" />
-          </div>
+          <li><a href="/html/sobreNosotros.html">Sobre Nosotros</a></li>
         </ul>
+        <div class="imgheader">
+          <a class="name" href="/index.html"><i class="fa-solid fa-mobile-screen fa-beat fa-xl" style="color: #fbf9f9;"></i>Tecnophone</a>
+        </div>
       </nav>
     </header>
     <main>
       <section class="banner">
           <h1 id="title">Tecnophone</h1>
-          <p id="subtitle">Tu tienda de celulares</p>
+          <h2 id="subtitle">Tu tienda de celulares</h2>
       </section>
       <section id="search">
       <h2>¿Qué estás buscando?</h2>
@@ -45,46 +44,44 @@
         <h2>Productos destacados</h2>
         <div class="destacados">
           <div class="item">
-            <img src="/assets/Moto G23.png" class="img-cel" alt="Moto G23">
+            <img src="/assets/Moto-G23.png" class="img-cel" alt="Moto-G23">
                     <div class="item-info">
                         <h5 class="item-title">Moto G23</h5>
-                        <p class="item-describe">Descripción corta del producto.</p>
-                        <a href="#" >Ver detalles</a>
+                        <a class="boton-item" href="#" >Ver detalles</a>
                     </div>
           </div>
           <div class="item">
-            <img src="/assets/Moto G84.png" class="img-cel" alt="Moto G84">
+            <img src="/assets/Moto-G84.png" class="img-cel" alt="Moto-G84">
                     <div class="item-info">
                         <h5 class="item-title">Moto G84</h5>
-                        <p class="item-describe">Descripción corta del producto.</p>
-                        <a href="#" >Ver detalles</a>
+                        <a class="boton-item" href="#" >Ver detalles</a>
                     </div>
           </div>
           <div class="item">
-            <img src="/assets/Samsung A54.png" class="img-cel" alt="Samsung A54">
+            <img src="/assets/Samsung-A54.png" class="img-cel" alt="Samsung-A54">
                     <div class="item-info">
                         <h5 class="item-title">Samsung A54</h5>
-                        <p class="item-describe">Descripción corta del producto.</p>
-                        <a href="#" >Ver detalles</a>
+                        <a class="boton-item" href="#" >Ver detalles</a>
                     </div>
           </div>
         </div>
-        <h2 class="prod"><a href="/html/productos.html">Ver todos los productos</a></h2>
-      </section>
-
-      <footer>
-        <a href="">Términos y condiciones</a>
-        <a href="">Preguntas frecuentes</a>
-        <a href="">Ayuda</a>
-        <div class="social-icosn">
-          <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-
+        <div class="boton-box">
+          <a class="boton" href="/html/productos.html">Ver todos los productos</a>
         </div>
-        <p>2024 Tecnophone. Todos los derechos reservados.</p>
-      </footer>
-
+      </section>
     </main>
+    <footer>
+      <a href="">Términos y condiciones</a>
+      <a href="">Preguntas frecuentes</a>
+      <a href="">Ayuda</a>
+      <div class="social-icosn">
+        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      </div>
+      <p>2024 Tecnophone. Todos los derechos reservados.</p>
+    </footer>
+  </div>
   </body>
 </html>
