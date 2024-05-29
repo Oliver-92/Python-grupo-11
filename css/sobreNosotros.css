@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #343a40;
+    background: #2a2d30;
     position: sticky;
     top: 0;
     padding: 5px;
@@ -70,25 +70,40 @@ ul {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-
-    ul,
-    .imgheader {
-        flex-grow: unset;
-        font-size: 15px;
+.cel-menu{
+    display: none;
+}
+  
+.cel-menu-icon{
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+}
+  
+.cel-nav{
+    display: none;
+    flex-direction:column;
+    background-color: #2a2d30;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+  
+.cel-menu:checked~.cel-nav{
+    display: flex;
+}
+  
+@media (max-width: 760px){
+    .desktop-nav{
+        display: none;
     }
-
-    nav ul li {
-        font-size: 12px;
-        margin: 0;
+    .cel-menu-icon{
+        display: block;
     }
-
-    nav ul li a {
-        padding: 20px 7px;
-    }
-
-    #subtitle {
-        font-size: 100rem;
+    .imgheader{
+      padding: 15px;
     }
 }
 
@@ -128,7 +143,7 @@ ul {
 }
 
 footer {
-    background-color: #343a40;
+    background-color: #2a2d30;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
